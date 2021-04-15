@@ -13,8 +13,8 @@ class RatingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        config()->set('cache.stores.temp_tag', ['driver' => 'file', 'path' => config('tag.cache_storage_path')]);
-               
+       $this->mergeConfigFrom(__DIR__ . '/../config/rating.php', 'rating');
+
         // register our controller
        $this->app->make('Kavano\Rating\RatingController');
     }
@@ -30,8 +30,6 @@ class RatingServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/rating.php' => $this->app->configPath('rating.php'),
         ], 'rating-microservice');
-
-        $this->mergeConfigFrom(__DIR__ . '/../config/rating.php', 'rating');
 
         $this->loadRoutesFrom(
             __DIR__ . '/../routes/api.php'
