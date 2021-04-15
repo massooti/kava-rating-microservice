@@ -31,9 +31,9 @@ return [
 
         /*
          * URL path to use for the docs endpoint (if `add_routes` is true).
-         * By default, `/docs` opens the HTML page, `/docs.postman` opens the Postman collection, and `/docs.openapi` the OpenAPI spec.
+         * By default, `/rating/status` is for geting rate status and `ratng/submit` is for rate and submit feedback in microservice.
          */
-        'prefix_url' => '/api/v1/',
+        'prefix_url' => '',
 
         /*
          * Middleware to attach to the docs endpoint (if `add_routes` is true).
