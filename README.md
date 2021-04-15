@@ -1,9 +1,14 @@
 Kavano Rating Micro Service Library
 
-1 - composer require massooti/rating-microservice
+1 - Installation
 
-2 - put  in config/app.php providers
+``` composer require massooti/rating-microservice ```
+
+2 - in config/app.php providers
+```
 Kavano\Rating\RatingServiceProvider::class,
+
+```
 
 3 -
 ```
