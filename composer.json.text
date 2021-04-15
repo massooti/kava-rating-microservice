@@ -1,8 +1,9 @@
 {
-    "name": "massooti/rating-micro-service",
-    "description": "By using this package you can sumbit your rate to application on micro service.",
+    "name": "massooti/rating-microservice",
+    "description": "this package connect Kavano application to ratini micro servcise easily.",
     "type": "library",
     "require": {
+        "php": "^7.1.3",
         "guzzlehttp/guzzle": "^7.3",
         "jenssegers/agent": "^2.6"
     },
@@ -12,11 +13,13 @@
             "Kavano\\Rating\\": "src/"
         }
     },
-
     "authors": [
         {
             "name": "Masoud Zaeem",
-            "email": "massoudzaeem@gmail.com"
+            "email": "massoudzaeem@gmail.com",
+            "homepage": "https://github.com/massooti/kava-rating-microservice",
+            "role": "Developer"
         }
     ]
+
 }
