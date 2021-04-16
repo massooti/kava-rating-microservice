@@ -33,12 +33,12 @@ return [
          * URL path to use for the docs endpoint (if `add_routes` is true).
          * By default, `/rating/status` is for geting rate status and `ratng/submit` is for rate and submit feedback in microservice.
          */
-        'prefix_url' => '',
+        'prefix_url' => null,
 
         /*
          * Middleware to attach to the docs endpoint (if `add_routes` is true).
          */
-        'middleware' => '',
+        'middleware' => null,
     ],
 
 ];
