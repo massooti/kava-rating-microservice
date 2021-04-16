@@ -100,10 +100,10 @@ class RatingController extends Controller
     
         private static function getCredentials()
         {
-            self::$rate_host = env('RATING_MICROSERVICE_URI');
-            self::$app_key = env("RATING_MICROSERVICE_KEY");
-            self::$user_name = env("RATING_MICROSERVICE_USERNAME");
-            self::$password = env("RATING_MICROSERVICE_PASSWORD");
+            self::$rate_host = config('rating.uri');
+            self::$app_key = config("rating.app_key");
+            self::$user_name = config("rating.username");
+            self::$password = config("rating.password");
     
             $payload = [
                 'form_params' => [
